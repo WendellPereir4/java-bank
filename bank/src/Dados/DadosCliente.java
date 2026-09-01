@@ -6,7 +6,7 @@ public class DadosCliente {
     private int idadeDoCliente;
     private Long cpfDoCliente;
 
-    public    DadosCliente(String nomeDoCliente, int idadeDoCliente, Long cpfDoCliente){// CONSTRUTOR, recebe os dados da main.
+public DadosCliente(String nomeDoCliente, int idadeDoCliente, Long cpfDoCliente){// CONSTRUTOR, recebe os dados da main.
 
         this.nomeDoCliente = nomeDoCliente;
         // this.nomeDoCliente -> atributo da classe (fica guardado no objeto)
@@ -22,7 +22,7 @@ public class DadosCliente {
     }
 
     public int getIdadeDoCliente(){
-        return idadeDoCliente;
+    return idadeDoCliente;
     }
 
     public Long getCpfDoCliente(){
