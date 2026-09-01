@@ -8,11 +8,17 @@ public class Main {
   static void main(String[] args) {
 
     Scanner fc = new Scanner(System.in);
-    DadosCliente cliente = new DadosCliente("Seu nome:", 1,221111111L);
 
-    //System.out.println("Seu nome completo é: " + cliente.getNomeDoCliente());
-    //String nome = fc.nextLine();
+    System.out.println("Digite seu nome: ");
+    String name = fc.nextLine();
 
+    System.out.println("Digite sua idade: ");
+    int idade = fc.nextInt();
+
+    System.out.println("Digite seu cpf: ");
+    long cpf = fc.nextLong();
+
+    DadosCliente cliente = new DadosCliente(name, idade, cpf);
 
     System.out.println("Seu nome completo é: " + cliente.getNomeDoCliente());
     System.out.println("Sua idade é: "+ cliente.getIdadeDoCliente());

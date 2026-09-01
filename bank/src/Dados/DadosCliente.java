@@ -26,7 +26,21 @@ public DadosCliente(String nomeDoCliente, int idadeDoCliente, Long cpfDoCliente)
     }
 
     public Long getCpfDoCliente(){
-        return cpfDoCliente ;
+    return cpfDoCliente ;
     }
+
+    public void setNomeDoCliente(String nomeDoCliente){
+    this.nomeDoCliente = nomeDoCliente;
+    }
+
+    public void setIdadeDoCliente(int idadeDoCliente){
+    this.idadeDoCliente = idadeDoCliente;
+    }
+
+    public void setCpfDoCliente(Long cpfDoCliente){
+    this.cpfDoCliente = cpfDoCliente;
+    }
+
+    //public void setCpfDoCliente = cpfDoCliente;
 
 }
