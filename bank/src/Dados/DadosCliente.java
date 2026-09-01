@@ -40,7 +40,4 @@ public DadosCliente(String nomeDoCliente, int idadeDoCliente, Long cpfDoCliente)
     public void setCpfDoCliente(Long cpfDoCliente){
     this.cpfDoCliente = cpfDoCliente;
     }
-
-    //public void setCpfDoCliente = cpfDoCliente;
-
 }
