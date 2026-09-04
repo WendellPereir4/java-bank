@@ -5,18 +5,20 @@ import Dados.DadosCliente;
 public class Create {
 
     private DadosCliente cliente;
-    private double saldo;
 
-    public Create(DadosCliente cliente, double saldo){
-    this.cliente = cliente;
-    this.saldo = saldo;
+    public Create(DadosCliente cliente, double saldo) {
+
+        if (cliente.getIdadeDoCliente() < 18) {
+            System.out.println("Você precisa ter 18 anos ou mais para criar uma conta.");
+            return;
+        }
+
+        this.cliente = cliente;
+
+        System.out.println("Conta criada com sucesso!");
     }
 
     public DadosCliente getCliente() {
         return cliente;
-    }
-
-    public double getSaldo(){
-        return saldo;
     }
 }

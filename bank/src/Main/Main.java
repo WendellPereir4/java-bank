@@ -3,6 +3,7 @@ package Main;
 import Dados.DadosCliente;
 
 import java.util.Scanner;
+import CreateAccount.Create;
 
 public class Main {
   static void main(String[] args) {
@@ -23,6 +24,7 @@ public class Main {
     System.out.println("Seu nome completo é: " + cliente.getNomeDoCliente());
     System.out.println("Sua idade é: "+ cliente.getIdadeDoCliente());
     System.out.println("Seu cpf é:  "+ cliente.getCpfDoCliente());
+    Create conta = new Create(cliente, 0);
 
     //Car car = new Car("BMW", "X6", 2024, 125000+12500); //-> new cria objetos, exem: BMW, x6, 2024. tipo uma pessoa fisica colocar idade,nome
 
